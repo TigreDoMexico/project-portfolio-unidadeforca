@@ -1,0 +1,6 @@
+<div class="member-card">
+  <img src="{{ .Get "photo" | relURL }}" alt="{{ .Get "name" }}" class="member-photo">
+  <h3>{{ .Get "name" }}</h3>
+  <p class="member-role">{{ .Get "role" }}</p>
+  <p class="member-description">{{ .Get "description" }}</p>
+</div>

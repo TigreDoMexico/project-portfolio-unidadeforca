@@ -27,3 +27,5 @@ Força, Força, Força! RAHUUUUU!
 </div>
 
 A história continua — e você faz parte dela.
+
+{{< carousel >}}
