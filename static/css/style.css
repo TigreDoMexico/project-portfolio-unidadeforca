@@ -1,0 +1,146 @@
+:root {
+    --cor-principal: #F1EFEC;
+    --cor-secundaria: #D4C9BE;
+    --cor-ativa: #030303;
+    --cor-terciaria: #123458;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--cor-ativa);
+    color: var(--cor-principal);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-ativa);
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    padding: 3rem 0;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: var(--cor-ativa);
+    margin-bottom: 1rem;
+}
+
+article p {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* article p strong {
+    font-size: 1.3rem;
+    color: var(--cor-ativa);
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+} */
+
+article .grito-guerra {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cor-ativa);
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--cor-secundaria);
+    border-left: 4px solid var(--cor-ativa);
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
